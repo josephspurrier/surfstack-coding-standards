@@ -31,3 +31,8 @@ Disclaimer
 
 There are no "correct" standards. They are simply designed to keep shared code
 similar and clean.
+
+Sources
+-------
+
+Much of the information is pulled from the [http://pear.php.net/manual/en/standards.php]PEAR Coding Standards
