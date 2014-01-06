@@ -54,12 +54,12 @@ The topics include:
 - PHP Code Tags
 - Example URLs
 - Error Handling
-- [https://github.com/josephspurrier/surfstack-coding-standards/blob/master/standards.md#best-practices](Best Practices)
+- [Best Practices](https://github.com/josephspurrier/surfstack-coding-standards/blob/master/standards.md#best-practices)
 
 
 
 Sources
 -------
 
-The [http://pear.php.net/manual/en/standards.php](PEAR Coding Standards)
+The [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
 was used as a base template.
