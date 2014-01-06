@@ -200,10 +200,7 @@ $x = ($y == ''
 Function Calls
 --------------
 
-- Functions should be called with no spaces between the function name, the
-opening parenthesis, and the first parameter; spaces between commas and each
-parameter, and no space between the last parameter, the closing parenthesis,
-and the semicolon. 
+- Functions should be called with no spaces between the function name, the opening parenthesis, and the first parameter; spaces between commas and each parameter, and no space between the last parameter, the closing parenthesis, and the semicolon.
 
 ```php
 <?php
