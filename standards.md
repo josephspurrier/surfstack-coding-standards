@@ -21,17 +21,20 @@ to as "bumpy case" or "camel caps").
 - In addition, they should have the package name as a prefix, to avoid name
 collisions between packages.
 
+```php
 <?php
 XML_RPC_serializeData();
 
 SurfStack_isAdmin();
 ?>
+```
 
 - Classes should be given descriptive names.
 - Avoid using abbreviations where possible.
 - Class names should always begin with an uppercase letter.
 - Separate words with underscores
 
+```php
 <?php
 class Log
 {
@@ -48,6 +51,7 @@ class HTML_Upload_Error
     foo();
 }
 ?>
+```
 
 Class Variables and Methods
 ---------------------------
@@ -58,16 +62,18 @@ Class Variables and Methods
  
  - Property names SHOULD NOT be prefixed with a single underscore to indicate
 protected or private visibility.
- 
- <?php
- $counter = true;
- 
- connect();
- 
- getData();
- 
- buildSomeWidget();
- ?>
+
+```php
+<?php
+$counter = true;
+
+connect();
+
+getData();
+
+buildSomeWidget();
+?>
+```
 
 Constants
 ---------
@@ -78,11 +84,13 @@ used in.
 - The true, false and null constants are excepted from the all-uppercase rule,
 and must always be lowercase.
 
+```php
 <?php
 define('DB_DATASOURCENAME', true);
 
 define('SERVICES_AMAZON_S3_LICENSEKEY', false);
 ?>
+```
 
 File Formats
 ------------
@@ -92,9 +100,11 @@ File Formats
 - Use ISO-8859-1 or UTF-8 character encoding.
 - The encoding may be declared at the top of the file.
 
+```php
 <?php
 declare(encoding = 'utf-8');
 ?>
+```
 
 E_STRICT Compatible
 -------------------
@@ -102,6 +112,7 @@ E_STRICT Compatible
 - All the code must not produce any warnings or errors when PHP's error
 reporting level is set to E_ALL | E_STRICT.
 
+```php
 <?php
 // Report all PHP errors in PHP 5.4.0 and newer
 error_reporting(E_ALL);
@@ -109,7 +120,7 @@ error_reporting(E_ALL);
 // Same as error_reporting(E_ALL)
 ini_set('error_reporting', E_ALL);
 ?>
-
+```
 
 Control Structures
 ------------------
@@ -123,6 +134,7 @@ introduced when new lines are added.
 
 These include if, for, while, switch, etc.
 
+```php
 <?php
 if (($x == $y) || ($x == $z))
 {
@@ -152,9 +164,11 @@ switch ($x)
         break;
 }
 ?>
+```
 
 - Conditions can be split onto several lines.
 
+```php
 <?php
 if (($x == $y
     || $x == $z)
@@ -165,6 +179,7 @@ if (($x == $y
     foo();
 }
 ?>
+```
 
 Ternary Operators
 -----------------
@@ -172,18 +187,22 @@ Ternary Operators
 - Surround the statement in parenthesis.
 - Ensure there is a space on both sides of the question mark (?) and colon (:).
 
+```php
 <?php
 $x = ($y == '' ? true : false);
 ?>
+```
 
 - Separate out each condition to a separate line if it is too long.
 
+```php
 <?php
 $x = ($y == ''
     ? callAReallyLongFunctionName()
     : callADifferentReallyLongCuntionName
 );
 ?>
+```
 
 Function Calls
 --------------
@@ -193,29 +212,36 @@ opening parenthesis, and the first parameter; spaces between commas and each
 parameter, and no space between the last parameter, the closing parenthesis,
 and the semicolon. 
 
+```php
 <?php
 $foo = bar($x, $y, $z);
 ?>
+```
 
 - In the case of a block of related assignments, more space may be inserted to
 promote readability.
 
+```php
 <?php
 $short         = foo($x);
 $long_variable = foo($y);
 ?>
+```
 
 - To support readability, parameters in subsequent calls to the same
 function/method may be aligned by parameter name.
 
+```php
 <?php
 $foo('param1',     'second',        true);
 $foo('parameter2', 'third',         false);
 $foo('param3',     'verrrrrrylong', true);
 ?>
+```
 
 - Parameters can be split onto several lines.
 
+```php
 <?php
 $this->foo->bar->callThisFunctionWithALongName(
     $parameterOne,
@@ -223,34 +249,39 @@ $this->foo->bar->callThisFunctionWithALongName(
     $aVeryLongParameterThree
 );
 ?>
-
+```
 
 Class Definitions
 -----------------
 
 - Class declarations have their opening brace on a new line.
 
+```php
 <?php
 class Foo_Bar
 {
     foo();
 }
 ?>
+```
 
 Function Definitions
 --------------------
 
 - Function declarations follow the "Allman style".
 
+```php
 <?php
 function foo($arg1, $arg2 = '')
 {
     bar();
 }
 ?>
+```
 
 - Functions with many parameters may need to be split onto several lines.
 
+```php
 ?php
 function someFunctionWithAVeryLongName($firstParameter = 'something',
     $secondParameter = 'booooo',
@@ -263,6 +294,7 @@ function someFunctionWithAVeryLongName($firstParameter = 'something',
     foobar();
 }
 ?>
+```
 
 Arrays
 ------
@@ -270,6 +302,7 @@ Arrays
 - Assignments in arrays should be aligned on several lines.
 - All values should have trailing commas to keep code diffs minimal.
 
+```php
 <?php
 $arrBar = array(
     'foo',
@@ -289,6 +322,7 @@ $arrFooBar = array(
     'spam' => 'ham',
 );
 ?>
+```
 
 Comments
 --------
@@ -327,6 +361,7 @@ Error Handling
 impossible to recover.
 - When an error occurs, throw new new Exception() or ErrorException()
 
+```php
 <?php
 // Throw regular exception
 throw new \Exception();
@@ -339,6 +374,7 @@ throw new \ErrorException($e->getMessage(),
     $e->getLine()
 );
 ?>
+```
 
 Best Practices
 --------------
@@ -349,15 +385,18 @@ special characters which is slower when not needed.
 - Use double quotes for string that contain many single quotes like MySQL
 queries.
 
+```php
 <?php
 $foo = 'This is faster';
 $bar = "This is slower";
 
 $foobar = "SELECT * FROM users WHERE first_name='Sam'";
 ?>
+```
 
 - Return at the beginning of a function if possible
 
+```php
 <?php
 // This is good
 function foo($bar, $baz)
@@ -403,7 +442,7 @@ function foo($bar, $baz)
     }
 }
 ?>
-
+```php
 
 Will become a heading
 ==============
