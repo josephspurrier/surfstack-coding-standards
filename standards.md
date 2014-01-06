@@ -122,11 +122,8 @@ ini_set('error_reporting', E_ALL);
 Control Structures
 ------------------
 
-- There should be one space between the control keyword and opening parenthesis
-to distinguish them from function calls.
-- Use curly braces even in situations when there is one line of code. Having
-them increases readability and decreases the likelihood of logic errors being
-introduced when new lines are added.
+- There should be one space between the control keyword and opening parenthesis to distinguish them from function calls.
+- Use curly braces even in situations when there is one line of code. Having them increases readability and decreases the likelihood of logic errors being introduced when new lines are added.
 
 - These include if, for, while, switch, etc.
 
