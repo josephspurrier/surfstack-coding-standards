@@ -36,6 +36,28 @@ Information
 There are no "correct" standards. They are simply designed to keep shared code
 similar and clean.
 
+The topics include:
+- Indenting and Line Length
+- Naming Conventions
+- Class Variables and Methods
+- Constants
+- File Formats
+- E_STRICT Compatible
+- Control Structures
+- Ternary Operators
+- Function Calls
+- Class Definitions
+- Function Definitions
+- Arrays
+- Comments
+- Including Code
+- PHP Code Tags
+- Example URLs
+- Error Handling
+- [standards.md#best-practices](Best Practices)
+
+
+
 Sources
 -------
 
