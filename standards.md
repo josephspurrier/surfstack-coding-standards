@@ -59,7 +59,6 @@ Class Variables and Methods
  - Should be named using the "studly caps" style (also referred to as "bumpy
  case" or "camel caps").
  - Underscores should not be used
- 
  - Property names SHOULD NOT be prefixed with a single underscore to indicate
 protected or private visibility.
 
@@ -127,12 +126,11 @@ Control Structures
 
 - There should be one space between the control keyword and opening parenthesis
 to distinguish them from function calls.
-
 - Use curly braces even in situations when there is one line of code. Having
 them increases readability and decreases the likelihood of logic errors being
 introduced when new lines are added.
 
-These include if, for, while, switch, etc.
+- These include if, for, while, switch, etc.
 
 ```php
 <?php
@@ -442,19 +440,4 @@ function foo($bar, $baz)
     }
 }
 ?>
-```php
-
-Will become a heading
-==============
-
-Will become a sub heading
---------------
-
-*This will be Italic*
-
-**This will be Bold**
-
-- This will be a list item
-- This will be a list item
-
-    Add a indent and this will end up as code
+```
