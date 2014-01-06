@@ -54,7 +54,7 @@ The topics include:
 - PHP Code Tags
 - Example URLs
 - Error Handling
-- [Best Practices](https://github.com/josephspurrier/surfstack-coding-standards/blob/master/standards.md#best-practices)
+- [Best Practices](standards.md#best-practices)
 
 
 
