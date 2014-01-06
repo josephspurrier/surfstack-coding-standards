@@ -56,11 +56,9 @@ class HTML_Upload_Error
 Class Variables and Methods
 ---------------------------
 
- - Should be named using the "studly caps" style (also referred to as "bumpy
- case" or "camel caps").
- - Underscores should not be used
- - Property names SHOULD NOT be prefixed with a single underscore to indicate
-protected or private visibility.
+ - Should be named using the "studly caps" style (also referred to as "bumpy case" or "camel caps").
+ - Underscores should not be used.
+ - Property names SHOULD NOT be prefixed with a single underscore to indicate protected or private visibility.
 
 ```php
 <?php
