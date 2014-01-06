@@ -10,6 +10,8 @@ The SurfStack Standards are designed to enable creation of easy to read code.
 
 Example:
 
+```php
+<?php
 while (x == y)
 {
     foo();
@@ -25,6 +27,8 @@ else
     x--;
     bar();
 }
+?>
+```
 
 Disclaimer
 ----------
