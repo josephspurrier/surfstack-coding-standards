@@ -1,4 +1,4 @@
-SurfStack Standards for PHP Readme
+SurfStack Coding Standards for PHP
 ==================================
 
 The coding standards are based off the Allman indent style. The style puts the
