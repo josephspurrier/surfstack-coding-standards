@@ -32,7 +32,7 @@ SurfStack_isAdmin();
 - Classes should be given descriptive names.
 - Avoid using abbreviations where possible.
 - Class names should always begin with an uppercase letter.
-- Separate words with underscores
+- Separate words with underscores.
 
 ```php
 <?php
@@ -93,7 +93,7 @@ File Formats
 ------------
 
 - There SHOULD NOT be any line feeds after the closing PHP tag (?>).
-- All scripts should be stored as ASCII text
+- All scripts should be stored as ASCII text.
 - Use ISO-8859-1 or UTF-8 character encoding.
 - The encoding may be declared at the top of the file.
 
@@ -122,11 +122,8 @@ ini_set('error_reporting', E_ALL);
 Control Structures
 ------------------
 
-- There should be one space between the control keyword and opening parenthesis
-to distinguish them from function calls.
-- Use curly braces even in situations when there is one line of code. Having
-them increases readability and decreases the likelihood of logic errors being
-introduced when new lines are added.
+- There should be one space between the control keyword and opening parenthesis to distinguish them from function calls.
+- Use curly braces even in situations when there is one line of code. Having them increases readability and decreases the likelihood of logic errors being introduced when new lines are added.
 - These include if, for, while, switch, etc.
 
 ```php
