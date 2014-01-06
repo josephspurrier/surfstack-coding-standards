@@ -45,7 +45,7 @@ The topics include:
 - [E_STRICT Compatible](standards.md#e_strict-compatible)
 - [Control Structures](standards.md#control-structures)
 - [Ternary Operators](standards.md#ternary-operators)
-- [Function Calls](#function-calls)
+- [Function Calls](standards.md#function-calls)
 - [Class Definitions](standards.md#class-definitions)
 - [Function Definitions](standards.md#function-definitions)
 - [Arrays](standards.md#arrays)
