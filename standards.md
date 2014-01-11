@@ -306,11 +306,13 @@ $arrFoo = array(
 );
 
 $arrFooBar = array(
-    'foo'  => array(
-        'x'=>5,
-        'y'=>10,
+    'foo' => array(
+        'x' => 5,
+        'y' => 10,
     ),
-    'spam' => 'ham',
+    'bar' => array(
+        'spam' => 'ham',
+    ),
 );
 ?>
 ```
