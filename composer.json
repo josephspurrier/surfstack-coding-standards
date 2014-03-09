@@ -1,0 +1,14 @@
+{
+   "name": "josephspurrier/surfstack-coding-standards",
+    "description": "PHP Coding Standards using Allman Style",
+    "keywords": ["coding", "standards"],
+    "homepage": "https://github.com/josephspurrier/surfstack-coding-standards",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joseph Spurrier",
+            "homepage": "http://josephspurrier.com"
+        }
+    ],
+    "version": "1.0.0"
+}
