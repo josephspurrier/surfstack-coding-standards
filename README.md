@@ -61,3 +61,5 @@ Sources
 
 The [PEAR Coding Standards](http://pear.php.net/manual/en/standards.php)
 was used as a base template.
+
+To install using composer, use the code from the Wiki page [Composer Wiki page](../../wiki/Composer).
